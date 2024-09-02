@@ -47,13 +47,5 @@ document.addEventListener('DOMContentLoaded', async function() {
         const weatherContainer = document.getElementById('weather');
         weatherContainer.innerHTML = `<p>Unable to retrieve weather data: ${error.message}</p>`;
     }
-    searchButton.addEventListener("click", () => {
-        const cityName = cityInput.value.trim();
-        if (cityName) {
-            fetchWeather(cityName);
-        } else {
-            alert("Please enter a city name.");
-        }
-    });
  });
  
